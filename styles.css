@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --white: #f7f7f7;
+    --green: #558b6e;
+    --black: #3f3f3f;
+    --blue: #2c4dd4;
+    --orange: #f17354;
+    --gray: #4c5b5c;
+    --purple: #6d5af1;
+}
+
+body{
+    height: 100vh;
+    width: 99vw;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    background: var(--black);
+    background-size: 200% 100%;
+    background-position: 0%;
+}
+.greenA{
+    color:var(--green);
+}
+.mode{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 50px;
+    border-style: none;
+    
+}
+#modeBtn{
+    border-style: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--black);
+    cursor: pointer;
+}
+header{
+    padding: 15%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+}
+h1{
+    font-size: 100px;
+    margin-bottom: 0%;
+}
+h4{
+    font-weight: 150;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+a:link{
+    color: var(--white);
+    text-decoration: none;
+}
+a:visited{
+    color: var(--white);
+    text-decoration: none;
+}
+.boxLink{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 70%;
+    height: 50%;
+    background-color: #2c4dd4;
+    opacity: 85%;
+    margin-left: 15%;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-bottom: 5%;
+}
+.hidden {
+    opacity: 0%;
+    filter: blur(5px);
+    transition: all 1.5s;
+}
+.show{
+    opacity: 100%;
+    filter: blur(0px);
+
+}
+@keyframes nextHover {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.01);
+        opacity: 100%;
+    }
+}
+.box:hover{
+    animation: .35s nextHover 1 forwards;
+}
+.language, .socialStudies, .math, .science{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.language{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #354fff;
+}
+.socialStudies{
+    background-color: var(--orange);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cc6147;
+}
+.math{
+    background-color: var(--gray);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #6b8082;
+}
+.science{
+    background-color: var(--purple);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #7d5eff;
+}
+.top{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5%;
+    padding-top: 1.5%;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+    width: 97.5%;
+    height: 15%;
+}
+.botArrow{
+    visibility: hidden;
+}
+.language:hover{
+    box-shadow: 0px 0px 15px #354fff;
+}
+.socialStudies:hover{
+    box-shadow: 0px 0px 15px #cc6147;
+}
+.math:hover{
+    box-shadow: 0px 0px 15px #6b8082;
+}
+.science:hover{
+    box-shadow: 0px 0px 15px #7d5eff;
+}
+#footer{
+    color: var(--black);
+}
+@media(max-width: 840px)
+{
+    h1{
+        font-size: 75px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width: 640px)
+{
+    h1{
+        font-size: 53px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    img{
+        width: 225px;
+        height: 225px;
+    }
+    .topArrow{
+        display: none;
+    }
+    .top{
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .botArrow{
+        visibility: visible;
+    }
+    .num{
+        display: none;
+    }
+    .bottom{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .mode{
+        padding-top: 25px;
+        padding-right: 25px;
+    }
+}
+@media(max-width: 480px)
+{
+    h1{
+        font-size: 38px;
+    }
+    h4{
+        font-size: 8px;
+        font-weight: 300;
+    }
+    img{
+        width: 165px;
+        height: 165px;
+    }
+    .box{
+        font-size: 13px;
+        height: 30%;
+        margin-bottom: 30px;
+    }
+    .box:nth-child(2)
+    {
+        font-size: 10px;
+    }
+    .mode{
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+}
