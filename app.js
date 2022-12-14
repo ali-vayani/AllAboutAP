@@ -36,3 +36,10 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1) => observer.observe(e1));
+
+var sidebar = document.getElementById('sideBar');
+var toggle = document.getElementById('toggle');
+toggle.addEventListener('click', function()
+{
+    sidebar.classList.toggle('hidden');
+});
