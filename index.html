@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/60ab0b254c.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
 </head>
-<body>
-    <span class="mode hidden"> <button onClick="changeColor()" id="modeBtn" title="Lumos!"> <i class="fa-solid fa-moon"></i> </button> </span>
+<body id="colorMode">
+    <span class="mode hidden"> <button onClick="changeColor()" id="modeBtn" title="Lumos!"> <i class="fa-solid fa-moon" ></i> </button> </span>
     <header class="hidden"> 
         <h1> 
             <span><span class="greenA">A</span>ll</span>  
@@ -22,7 +22,7 @@
         
     </header>
     <div class="box hidden">
-        <a class="language" href="/langCoursePg.html"> 
+        <a class="language" href="/home/ali/repos/allaboutapV2/langCoursePg.html" onClick="courseColorChange()"> 
             <div class="language">
             
                 <div class="top">
@@ -94,7 +94,7 @@
             </div>
         </a>
     </div>
-    <footer> <span id="footer"> . </span> </footer>
+    <footer><span id="footer colorMode"> Note: This website is in no affiliation with College Board </span></footer>
     
 </body>
 </html>
