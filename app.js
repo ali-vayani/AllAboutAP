@@ -1,10 +1,11 @@
-let counter = 0;
+let counter = 1;
 function changeColor()
 {
-    counter++;
     window.localStorage.setItem('newCounter', counter);
+    let counterNew = localStorage.getItem('newCounter');
+    console.log(counterNew);
     
-    if(counter % 2 != 0)
+    if(counterNew % 2 == 0)
     {
 
         document.getElementById('colorMode').style.color = "#3f3f3f";
@@ -13,6 +14,7 @@ function changeColor()
         document.getElementById('modeBtn').style.background = "#f7f7f7";
         document.getElementById('colorMode').style.transition = "500ms ease-in";
         document.getElementById('modeBtn').style.transition = "500ms ease-in";
+        counter++;
 
     }
     else
@@ -22,27 +24,26 @@ function changeColor()
         document.getElementById('modeBtn').style.background = "#3f3f3f";
         document.getElementById('modeBtn').style.color = "#f7f7f7";
         document.getElementById('colorMode').style.transition = "500ms ease-in";
+        counter++;
     }
         
 }
 function courseColorChange()
 {
-    let counter = localStorage.getItem('newCounter');
-    if(counter % 2 != 0)
+    let counterNew = localStorage.getItem('newCounter');
+    if(counterNew % 2 == 0)
     {
-
-        document.getElementById('colorMode').style.color = "#f7f7f7";
-        document.getElementById('colorMode').style.background = "#546fdb";
-        document.getElementById('colorMode').style.transition = "500ms ease-in";
+        const border = document.querySelectorAll('.border');
+        let length = border.length;
+        for(let i = 0; i < length; i++)
+        {
+            border[i].setAttribute('id', 'lightMode');
+        }
+        document.getElementById('sideBar').style.background = "#546fdb";
+        document.getElementById('sideBar').style.transition = "500ms ease-in";
         document.body.style.background = "#f7f7f7";
         document.body.style.transition = "500ms ease-in";
 
-    }
-    else
-    {
-        document.getElementById('colorMode').style.color = "#f7f7f7";
-        document.getElementById('colorMode').style.background = "#3f3f3f";
-        document.getElementById('colorMode').style.transition = "500ms ease-in";
     }
 }
 
