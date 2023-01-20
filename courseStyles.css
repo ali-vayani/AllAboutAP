@@ -120,6 +120,9 @@ button:hover{
 a:hover{
     cursor: pointer;
 }
+h5{
+    font-size: .75rem;
+}
 
 @media(min-width: 1000px)
 {
@@ -142,45 +145,50 @@ a:hover{
         height: 98.7%;
     }
 }
-@media(max-width: 840px)
+@media(max-width: 1400px)
 {
     .courses{
-        grid-template: 350px 350px 350px/ 50%;
+        grid-template: 350px 350px/ 450px 450px;
     }
-    #sideBar{
-        right: -35%;
-        width: 35%;
+}
+@media(max-width: 1000px)
+{
+    .courses{
+        grid-template: 350px 350px/ 450px 450px;
     }
 }
 
-@media(max-width: 640px)
+@media(max-width: 800px)
 {
     .courses{
-        grid-template: 350px 350px 350px/ 50%;
+        grid-template: 350px 350px 350px 350px/ 450px;
     }
     .box{
         width: 100%;
         font-size: 15px;
     }
     #sideBar{
-        right: -100%;
-        width: 100%;
-        font-size: 40px;
-        gap: 20px;
+        height: 100%;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 0rem;
+        font-weight: 1000;
     }
 }
 @media(max-width: 480px)
 {
     .courses{
-        grid-template: 350px 350px 350px/ 50%;
+        grid-template: 350px 350px 350px 350px/ 450px;
     }
     .box{
         width: 100%;
         font-size: 13px;
     }
     #sideBar{
-        right: -100%;
-        width: 100%;
-        font-size: 30px;
+        height: 100%;
+        flex-direction: column;
+        font-size: 1.3rem;
+        gap: 0rem;
+        font-weight: 1000;
     }
 }
