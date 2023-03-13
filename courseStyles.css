@@ -41,7 +41,6 @@ body{
 }
 .mainItems{
     width: 100%;
-    background-color: var(--black);
 }
 button{
     width: 45px;
@@ -82,6 +81,9 @@ button:hover{
 .courses{
     display: flex;
     justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--black);
 }
 .box{
     width: 400px;
