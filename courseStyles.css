@@ -14,7 +14,7 @@ body{
     margin: 0px;
     font-family: "Poppins", sans-serif;
     color: var(--white);
-    background: var(--black);
+    background: var(--blue);
     background-size: 200% 100%;
     background-position: 0%;
     display: flex;
@@ -178,7 +178,7 @@ h5{
 @media(max-width: 480px)
 {
     .courses{
-        grid-template: 350px 350px 350px 350px/ 450px;
+        grid-template: 350px 350px 350px 350px/ 350px;
     }
     .box{
         width: 100%;
