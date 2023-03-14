@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Info Outline</title>
+    <link rel="stylesheet" href="courseInfoPg.css">
+    <script src="tryingSomething.js" crossorigin="anonymous"></script>
+    <script src="tryingSomething.json"></script>
+    <script src="https://kit.fontawesome.com/60ab0b254c.js" crossorigin="anonymous"></script>
+</head>
+<body onLoad="ready()">
+    <div class="wrapper">
+        <header class="stay"> <a href="index.html" class="AAAP"><span class="green">A</span>ll <span class="green">A</span>bout <span class="green">A</span>P</a></header>
+        <div class="mainContent">
+            
+            
+            <article class="mainInfo">
+                <header class="articleHeader">AP Language and Composition</header>
+                <h2 id="course">About The Course</h2>
+                <p class="courseInfo"></p>
+                <h2 id="exam">About The Exam</h2>
+                <p class="examDate"><strong>&#x2022 Exam Date:</strong></p>
+                <p class="mcqInfo"><strong>&#x2022 Multiple Choice:</strong></p>
+                <p class="indent xtraMcqInfo">&#x2022</p>
+                <p class="indent xxtraMcqInfo">&#x2022</p>
+
+                <p class="frqInfo"><strong>&#x2022 Free Response:</strong></p>
+                <p class="indent frqT1">&#x2022</p>
+                <p class="doubleIndent frqT1Info">&#x2022</p>
+                <p class="indent frqT2">&#x2022</p>
+                <p class="doubleIndent frqT2Info">&#x2022</p>
+                <p class="indent frqT3">&#x2022</p>
+                <p class="doubleIndent frqT3Info">&#x2022</p>
+                <br>
+                <br>
+                <h2><center>Score Distribtion</center></h2>
+                <div class="chartWapper">
+                    <div class="chartCard">
+                    <div class="chartBox">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                </div>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="langChart.js" crossorigin="anonymous"></script>
+                <br>
+                <br>
+
+                <h2 id="skills">Skill</h2>
+                <p class="indent unit1">1.</p>
+                <p class="indent unit2">2.</p>
+                <p class="indent unit3">3.</p>
+                <p class="indent unit4">4.</p>
+                <p class="indent unit5">5.</p>
+                <p class="indent unit6">6.</p>
+                <p class="indent unit7">7.</p>
+                <p class="indent unit8">8.</p>
+                <br>
+                <br>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+                <canvas id="myDonught" width="250" height="150"></canvas>
+                <script src="langDoughnut.js"></script>     
+                <br>
+                <br>
+
+                <h2 id="difficulty">Difficulty</h2>
+                <p class="indent difficultyScale">&#x2022</p>
+                <p class="indent comparabilityClass">&#x2022</p>
+
+                <h2 id="misc">Misc</h2>
+                <p class="indent misc1">&#x2022</p>
+                <p class="indent misc2">&#x2022</p>
+            </article>
+
+
+
+
+            <div class="hyperlinksArea">
+                <h2 class="hyperlinks" ><a href="#course">About The Course</a></h2>
+                <h2 class="hyperlinks" ><a href="#exam">About The Exam</a></h2>
+                <h2 class="hyperlinks" ><a href="#skills">Skill</a></h2>
+                <h2 class="hyperlinks" ><a href="#difficulty">Difficulty</a></h2>
+                <h2 class="hyperlinks" ><a href="#misc">Misc</a></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
