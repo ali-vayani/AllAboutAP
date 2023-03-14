@@ -15,6 +15,7 @@ body{
     color: var(--black);
     background: var(--white);
     display: flex;
+    overflow-x: hidden;
 }
 .wrapper{
     width: 100%;
@@ -27,18 +28,20 @@ body{
     font-size: 40px;
     font-weight: 900;
     margin-left: 2%;
+    position: fixed;
+}
+.AAAP{
+    color: var(--black);
 }
 .mainContent{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    margin-bottom: 3%;
 }
 .mainInfo{
-    
-    width: 75%;
-    height: 100%;
+    width: 55%;
     border-left: 2px solid rgb(43, 77, 212, .2);
     border-right: 2px solid rgb(43, 77, 212, .2);
 }
@@ -46,10 +49,11 @@ body{
     font-size: 30px;
     margin-left: 3%;
     font-weight: 900;
+    text-shadow: 1px 0 var(--blue);
     color: var(--blue);
 }
 h2{
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 3%;
     font-weight: 600;
     color: #1E3593;
@@ -68,8 +72,28 @@ p{
 .hyperlinks{
     color: #5CB0F5;
     margin: 4%;
-    margin-left: 10%;
+    margin-left: 20%;
+}
+a, a:visited{
+    color: #5CB0F5;
+    text-decoration: none;
 }
 .hyperlinks:first-child{
     margin-top: 30%;
+}
+.indent{
+    text-indent: 2%;
+}
+.doubleIndent{
+    text-indent: 4%;
+}
+.chartWrapper{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chartCard, .myDonught{
+    width: 90%;
 }
