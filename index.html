@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/60ab0b254c.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
 </head>
-<body id="colorMode" onLoad="changeColor()">
+<body id="colorMode">
     <span class="mode hidden"> <button onClick="changeColor()" id="modeBtn" title="Lumos!"> <i class="fa-solid fa-moon" ></i> </button> </span>
     <header class="hidden"> 
         <h1> 
@@ -22,7 +22,7 @@
         
     </header>
     <div class="box hidden">
-        <a class="language" href="langCoursePg.html" onClick="courseColorChange()"> 
+        <a class="language" id="1" href="langCoursePg.html" onClick="coursePgTxt(this.id)"> 
             <div class="language">
             
                 <div class="top">

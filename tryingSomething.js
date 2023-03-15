@@ -24,10 +24,16 @@ let apLangComp =
     "unit7": " 7. Style: Reading",
     "unit8": " 8. Style: Writing",
     "diff": " 5.1/10",
+    "study1": " ",
+    "study2": " ",
+    "resource1": " ",
+    "resource2": " ",
+    "resource3": " ",
     "compare": " AP English Literature and Composition",
     "misc1": " No prerequisite for AP Language and Composition",
     "misc2": " 2 Semester class"
 };
+
 let title = document.getElementsByClassName('articleHeader');
 let exam = document.getElementsByClassName('examDate');
 let courseInfo = document.getElementsByClassName('courseInfo');
@@ -50,6 +56,11 @@ let unit6 = document.getElementsByClassName('unit6');
 let unit7 = document.getElementsByClassName('unit7');
 let unit8 = document.getElementsByClassName('unit8');
 let diff = document.getElementsByClassName('difficultyScale');
+let study1 = document.getElementsByClassName('study1');
+let study2 = document.getElementsByClassName('study2');
+let resource1 = document.getElementsByClassName('resource1');
+let resource2 = document.getElementsByClassName('resource2');
+let resource3 = document.getElementsByClassName('resource3');
 let compare =  document.getElementsByClassName('comparabilityClass');
 let misc1 = document.getElementsByClassName('misc1');
 let misc2 = document.getElementsByClassName('misc2');
@@ -77,7 +88,19 @@ function settingText()
     unit7[0].innerHTML = unit7[0].innerHTML + apLangComp["unit7"];
     unit8[0].innerHTML = unit8[0].innerHTML + apLangComp["unit8"];
     diff[0].innerHTML = diff[0].innerHTML + apLangComp["diff"];
+    study1[0].innerHTML = study1[0].innerHTML + apLangComp["study1"];
+    study2[0].innerHTML = study2[0].innerHTML + apLangComp["study2"];
+    resource1[0].innerHTML = resource1[0].innerHTML + apLangComp["resource1"];
+    resource2[0].innerHTML = resource2[0].innerHTML + apLangComp["resource2"];
+    resource3[0].innerHTML = resource3[0].innerHTML + apLangComp["resource3"];
     compare[0].innerHTML = compare[0].innerHTML + apLangComp["compare"];
     misc1[0].innerHTML = misc1[0].innerHTML + apLangComp["misc1"];
     misc2[0].innerHTML = misc2[0].innerHTML + apLangComp["misc2"];
+}
+
+
+function coursePgTxt()
+{
+    document.getElementById('class1').innerHTML = apLangComp["name"];
+    document.getElementById('class1Blurb').innerHTML = apLangComp["courseInfo"];
 }
