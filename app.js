@@ -101,6 +101,7 @@ function settingText()
 
 function coursePgTxt(id)
 {
+    
     console.log("Test" +id);
     if(id === 1)
     {
