@@ -9,7 +9,7 @@
     <script src="app.js"></script>
     <title>Languages Courses</title>
 </head>
-<body onLoad="coursePgTxt(1)">
+<body onLoad="coursePgTxt(0)">
     <div class="mainItems">
         <div class="barBtn"> <span class="btn"><button id="toggle"><i class="fa-solid fa-bars-staggered"></i></button></span></div>
         <div class="language">Languages</div>
@@ -17,7 +17,7 @@
             <div class="box">
                 <div class="border">
                     <div class="info">
-                        <a href="courseInfoTemplate.html">
+                        <a href="courseInfoTemplate.html" id="0" onClick="currentIdChange(this.id)">
                             <h3 id="class1"></h3>
                             <h5 id="class1Blurb"></h5>
                         </a>

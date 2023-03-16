@@ -14,7 +14,7 @@ body{
     margin: 0px;
     font-family: "Poppins", sans-serif;
     color: var(--white);
-    background: var(--blue);
+    background: var(--white);
     background-size: 200% 100%;
     background-position: 0%;
     display: flex;
@@ -83,14 +83,14 @@ button:hover{
     justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 .box{
     width: 400px;
     height: 300px;
     border-radius: 10px;
     background: var(--blue);
-    color: var(--white);
+    color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ button:hover{
     width: 98.5%;
     height: 98.5%;
     border-radius: 10px;
-    background: #394471;
+    background: #6D8AFF;
     opacity: 100%;
 }
 #lightMode{
@@ -126,15 +126,17 @@ a:hover{
 h5{
     font-size: .75rem;
 }
+a:visited{
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+}
 
 @media(min-width: 1000px)
 {
     .border:hover{
     animation: .35s nextHover 1 forwards;
-    }
-    .box:hover{
-    width: 405px;
-    height: 305px;
     }
 }
 
@@ -144,8 +146,6 @@ h5{
     }
     100%{
         opacity: 80%;
-        width: 98.7%;
-        height: 98.7%;
     }
 }
 @media(max-width: 1400px)

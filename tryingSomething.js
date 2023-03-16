@@ -34,6 +34,37 @@ let apLangComp =
     "misc2": " 2 Semester class"
 };
 
+let people = 
+[
+    {
+        "name": "Ali Vayani",
+        "rating": "100%",
+        "location": "Keller TX",
+        "height": "5' 11\"",
+        "age": 16,
+        "hours": "7:30 am - 12:00 am",
+        "headerImage": "images/aliImage.jpeg"
+    },
+    {
+        "name": "Zach Hickman",
+        "rating": "78%",
+        "location": "Fort Worth TX",
+        "height": "6' 2\"",
+        "age": 16,
+        "hours": "5:30 am - 11:30 am",
+        "headerImage": "images/aliImage.jpeg"
+    },
+    {
+        "name": "Hunter Honikes",
+        "rating": "63%",
+        "location": "Fort Worth TX",
+        "height": "5' 10\"",
+        "age": 15,
+        "hours": "1:30 pm - 2:00 pm",
+        "headerImage": "images/aliImage.jpeg"
+    }
+];
+
 let title = document.getElementsByClassName('articleHeader');
 let exam = document.getElementsByClassName('examDate');
 let courseInfo = document.getElementsByClassName('courseInfo');
