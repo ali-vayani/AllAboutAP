@@ -36,6 +36,14 @@ let compare =  document.getElementsByClassName('comparabilityClass');
 let misc1 = document.getElementsByClassName('misc1');
 let misc2 = document.getElementsByClassName('misc2');
 let misc3 = document.getElementsByClassName('misc3');
+//Spanish lit specific 
+let s1A = document.getElementsByClassName('s1A');
+let s1B = document.getElementsByClassName('s1B');
+let set1 = document.getElementsByClassName('set1');
+let set2 = document.getElementsByClassName('set2');
+let set3 = document.getElementsByClassName('set3');
+
+
 //Clases obj
 let classes = 
 [
@@ -141,14 +149,17 @@ let classes =
         "misc1": "&#x2022 No Offical Prerequisites, however, some schools require a beginner level Spanish class to be taken first.",
         "misc2": "&#x2022 2 Semester Course"
     },
-    //spanish
+    //spanish lit
     {
         "name": "AP Spanish Literature and Culture",
         "courseInfo": "&#x2022 AP Spanish Literature and Culture is a college-level course that is based primarily on analyzing and comparing literary works from the Spanish-speaking world, as well as studying its influence on the Hispanic culture across a variety of texts, poems, and artworks. If you do not already have a Spanish-speaking background, expect a rigorous amount of coursework and studying if you are looking to succeed in the exam. ",
         "examDate": " Monday, May 1st 12:00 PM",
-        "mcqInfo": "  Section 1A: 20 minutes  |  15 questions  |  10% of total score",
-        "mcq1info": "&#x2022 Includes 3 sets of questions based on authentic audio texts including:",
-        "mcq2info": "&#x2022 ",
+        "s1A":"&#x2022 Section 1A: 20 minutes  |  15 questions  |  10% of total score",
+        "set1": "&#x2022 An excerpt from an interview with an author",
+        "set2": "&#x2022 A recited poem (not on the required reading list)",
+        "set3": "&#x2022 A presentation on a literary topic related to course content",
+        "s1B":"&#x2022 Section 1B: 1 hour  |  50 questions  |  40% of  total score",
+        "mcq1info":"&#x2022 Includes 6 sets of 7-10 questions based on readings from both in and out of the required reading list",
         "frqInfo":" 1 hour and 40 minutes  |  4 questions |  50% of total score",
         "frqT1": " 2 Short Answer Questions (Suggested time:  ~30 mins | 15 mins each)",
         "frqT1Info": "&#x2022 ",
@@ -229,10 +240,8 @@ function settingText()
     frqInfo[0].innerHTML = frqInfo[0].innerHTML + classes[currentId]["frqInfo"];
     frqT1[0].innerHTML = classes[currentId]["frqT1"];
     frqT1Info[0].innerHTML = classes[currentId]["frqT1Info"];
-    frqT1Infox2[0].innerHTML = classes[currentId]["frqT1Infox2"];
     frqT2[0].innerHTML = classes[currentId]["frqT2"];
     frqT2Info[0].innerHTML = classes[currentId]["frqT2Info"];
-    frqT2Infox2[0].innerHTML = classes[currentId]["frqT2Infox2"];
     frqT3[0].innerHTML = classes[currentId]["frqT3"];
     frqT3Info[0].innerHTML = frqT3Info[0].innerHTML + classes[currentId]["frqT3Info"];
     unit1[0].innerHTML = classes[currentId]["unit1"];
@@ -252,7 +261,26 @@ function settingText()
     compare[0].innerHTML = classes[currentId]["compare"];
     misc1[0].innerHTML = classes[currentId]["misc1"];
     misc2[0].innerHTML = classes[currentId]["misc2"];
-    misc3[0].innerHTML = classes[currentId]["misc3"];
+
+    //Spanish lang specific
+    if(currentId == 2)
+    {
+        frqT1Infox2[0].innerHTML = classes[currentId]["frqT1Infox2"];
+        frqT2Infox2[0].innerHTML = classes[currentId]["frqT2Infox2"];
+    }
+
+    //Spanish Lit specifics
+    if(currentId == 3)
+    {
+        s1A[0].innerHTML = classes[currentId]["s1A"];
+        s1B[0].innerHTML = classes[currentId]["s1B"];
+        set1[0].innerHTML = classes[currentId]["set1"];
+        set2[0].innerHTML = classes[currentId]["set2"];
+        set3[0].innerHTML = classes[currentId]["set3"];
+        misc3[0].innerHTML = classes[currentId]["misc3"];
+    }
+
+
 }
 
 //Sets the coursePgTxt
@@ -312,3 +340,17 @@ toggle.addEventListener('click', function()
 {
     sidebar.classList.toggle('hidden');
 });
+
+let w = window.innerWidth;
+let h = window.innerHeight; 
+
+function chartResize()
+{
+    let w = window.innerWidth;
+    let h = window.innerHeight; 
+    if(w< 400)
+    {
+        document.getElementById("myChart").width = 740;
+        document.getElementById("myChart").height = 370;
+    }
+}

@@ -9,9 +9,9 @@
     <script src="app.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/60ab0b254c.js" crossorigin="anonymous"></script>
 </head>
-<body onLoad="settingText()">
+<body onLoad="settingText()" onLoad="chartResize()">
     <div class="wrapper">
-        <header class="stay"> <a href="index.html" class="AAAP"><span class="green">A</span>ll <span class="green">A</span>bout <span class="green">A</span>P</a></header>
+        <header class="header"> <span class="stay"><a href="index.html" class="AAAP"><span class="green">A</span>ll <span class="green">A</span>bout <span class="green">A</span>P</a></span></header>
         <div class="mainContent">
             
             
@@ -22,6 +22,13 @@
                 <h2 id="exam">About The Exam</h2>
                 <p class="examDate"><strong>&#x2022 Exam Date:</strong></p>
                 <p class="mcqInfo"><strong>&#x2022 Multiple Choice:</strong></p>
+
+                <p class="indent s1A"></p>
+                <p class="doubleIndent set1"></p>
+                <p class="doubleIndent set2"></p>
+                <p class="doubleIndent set3"></p>
+                <p class="indent s1B"></p>
+
                 <p class="indent xtraMcqInfo"></p>
                 <p class="indent xxtraMcqInfo"></p>
 
@@ -34,21 +41,14 @@
                 <p class="doubleIndent frqT2Infox2"></p>
                 <p class="indent frqT3"></p>
                 <p class="doubleIndent frqT3Info"></p>
-                <br>
-                <br>
+
                 <h2><center>Score Distribtion</center></h2>
-                <div class="chartWapper">
-                    <div class="chartCard">
-                    <div class="chartBox">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
+
+                <div class="chartBox">
+                    <canvas id="myChart"></canvas>
                 </div>
                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="langChart.js" crossorigin="anonymous"></script>
-                <br>
-                <br>
-
                 <h2 id="skills">Units</h2>
                 <p class="indent unit1"></p>
                 <p class="indent unit2"></p>
@@ -59,13 +59,13 @@
                 <p class="indent unit7"></p>
                 <p class="indent unit8"></p>
                 <br>
+                <h2><center>Multiple Choice Unit Distribution</center></h2>
                 <br>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
-                <canvas id="myDonught" width="250" height="150"></canvas>
+                <div class="chartBox donught">
+                    <canvas id="myDonught" width="740" height="370"></canvas>
+                </div>
                 <script src="langDoughnut.js"></script>     
-                <br>
-                <br>
-
                 <h2 id="difficulty">Difficulty</h2>
                 <p class="indent difficultyScale"></p>
                 <p class="indent comparabilityClass"></p>
