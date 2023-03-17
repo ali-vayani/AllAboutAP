@@ -90,7 +90,7 @@ button:hover{
     height: 300px;
     border-radius: 10px;
     background: var(--blue);
-    color: var(--black);
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
