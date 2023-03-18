@@ -1,4 +1,7 @@
-// setup
+
+export function test()
+{
+  // setup
 const data = {
     labels: ['5', '4', '3', '2', '1'],
       datasets: [{
@@ -42,3 +45,4 @@ const data = {
     document.getElementById('myChart'),
     config
   );
+}

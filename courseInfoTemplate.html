@@ -9,7 +9,7 @@
     <script src="app.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/60ab0b254c.js" crossorigin="anonymous"></script>
 </head>
-<body onLoad="settingText()" onLoad="chartResize()">
+<body onLoad="settingText()" >
     <div class="wrapper">
         <header class="header"> <span class="stay"><a href="index.html" class="AAAP"><span class="green">A</span>ll <span class="green">A</span>bout <span class="green">A</span>P</a></span></header>
         <div class="mainContent">
@@ -48,7 +48,7 @@
                     <canvas id="myChart"></canvas>
                 </div>
                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                <script src="langChart.js" crossorigin="anonymous"></script>
+                <script id="barChart" src="langChart.js" crossorigin="anonymous"></script>
                 <h2 id="skills">Units</h2>
                 <p class="indent unit1"></p>
                 <p class="indent unit2"></p>
@@ -65,7 +65,7 @@
                 <div class="chartBox donught">
                     <canvas id="myDonught" width="740" height="370"></canvas>
                 </div>
-                <script src="langDoughnut.js"></script>     
+                <script id="donughtChart"src="langDoughnut.js"></script>     
                 <h2 id="difficulty">Difficulty</h2>
                 <p class="indent difficultyScale"></p>
                 <p class="indent comparabilityClass"></p>

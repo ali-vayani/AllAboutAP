@@ -36,6 +36,9 @@ let compare =  document.getElementsByClassName('comparabilityClass');
 let misc1 = document.getElementsByClassName('misc1');
 let misc2 = document.getElementsByClassName('misc2');
 let misc3 = document.getElementsByClassName('misc3');
+//for charts
+let donughtChart;
+let barChart;
 //Spanish lit specific 
 let s1A = document.getElementsByClassName('s1A');
 let s1B = document.getElementsByClassName('s1B');
@@ -49,6 +52,7 @@ let classes =
 [
     //AP Lang Comp === 0
     {
+        "barChart": '\barCharts\English Language Bar Chart.js',
         "name": "AP English Language and Composition",
         "courseInfo": "&#x2022 In this class you’ll learn how to understand writing and rhetorical arguments through reading, analyzing, and writing texts. You’ll explore topics such as rhetorical situations, claims and evidence, reasoning and organization, and style.",
         "examDate": " Tuesday, May 9th 8:00 AM",
@@ -83,6 +87,7 @@ let classes =
 
     //AP Lit === 1
     {
+        "barChart": 'AllAboutAP-main\barCharts\English Literature Bar Chart.js',
         "name": "AP English Literature and Composition",
         "courseInfo": "&#x2022 In this class you’ll learn how to grasp a better understanding of different literature through analyzing characters, settings, structure, perspective, figurative language, and literary analysis.",
         "examDate": " Wednesday, May 3rd 8:00 AM",
@@ -116,6 +121,7 @@ let classes =
     },
     //Spanish lang
     {
+        "barChart": 'AllAboutAP-main\barCharts\Spanish Language Bar Chart.js',
         "name": "AP Spanish Language and Culture",
         "courseInfo": "&#x2022 This is a college-level course that is based on the Spanish language, as well as its influence on the Hispanic culture, communities, traditions, and families. Many of the students taking it will have already had some Spanish-speaking background, which is taken into account in the 80% pass rate across the last few years. If you do not have a Spanish-speaking background, expect a rigorous amount of coursework and studying if you are looking to succeed in the exam. ",
         "examDate": " Wednesday, May 10 8:00 AM",
@@ -151,9 +157,11 @@ let classes =
     },
     //spanish lit
     {
+        "barChart": 'AllAboutAP-main\barCharts\Spanish Literature Bar Chart.js',
         "name": "AP Spanish Literature and Culture",
         "courseInfo": "&#x2022 AP Spanish Literature and Culture is a college-level course that is based primarily on analyzing and comparing literary works from the Spanish-speaking world, as well as studying its influence on the Hispanic culture across a variety of texts, poems, and artworks. If you do not already have a Spanish-speaking background, expect a rigorous amount of coursework and studying if you are looking to succeed in the exam. ",
         "examDate": " Monday, May 1st 12:00 PM",
+        "mcqInfo": "",
         "s1A":"&#x2022 Section 1A: 20 minutes  |  15 questions  |  10% of total score",
         "set1": "&#x2022 An excerpt from an interview with an author",
         "set2": "&#x2022 A recited poem (not on the required reading list)",
@@ -161,12 +169,13 @@ let classes =
         "s1B":"&#x2022 Section 1B: 1 hour  |  50 questions  |  40% of  total score",
         "mcq1info":"&#x2022 Includes 6 sets of 7-10 questions based on readings from both in and out of the required reading list",
         "frqInfo":" 1 hour and 40 minutes  |  4 questions |  50% of total score",
-        "frqT1": " 2 Short Answer Questions (Suggested time:  ~30 mins | 15 mins each)",
-        "frqT1Info": "&#x2022 ",
-        "frqT2": "&#x2022 ",
-        "frqT2Info":"&#x2022 ",
-        "frqT3": "&#x2022 ",
-        "frqT3Info": "&#x2022 ",
+        "frqT1": "&#x2022 2 Short Answer Questions (Suggested time:  ~30 mins | 15 mins each)",
+        "frqT1Info": "&#x2022 Students explain how the given theme in an excerpt relates to the literary work from which it was taken ",
+        "frqT1Infox2": "&#x2022 Students compare how a particular theme is represented in a given text and image",
+        "frqT2": "&#x2022 2 Essay Questions (Suggested time: ~70 minutes | 35 minutes each)",
+        "frqT2Info":"&#x2022 Students analyze how a given text represents the characteristics of a certain genre as well as a particular historical, cultural, or social context.",
+        "frqT3": "",
+        "frqT3Info": "&#x2022 Students analyze how a given text represents the characteristics of a certain genre as well as a particular historical, cultural, or social context.",
         "unit1": " Unit 1: La época medieval",
         "unit2": " Unit 2: El siglo XVI",
         "unit3": " Unit 3: El siglo XVII",
@@ -231,6 +240,13 @@ function currentIdChange(id)
 function settingText()
 {
     currentId = localStorage.getItem("currentId");
+    donughtChart = document.getElementById('donughtChart');
+    barChart = document.getElementById('barChart');
+    
+    //barChart.setAttribute('src', classes[currentId]["barChart"])
+
+    barChart.setAttribute('src', "langChart.js")
+
     title[0].innerHTML = classes[currentId]["name"];
     exam[0].innerHTML = exam[0].innerHTML + classes[currentId]["examDate"];
     courseInfo[0].innerHTML = classes[currentId]["courseInfo"];
@@ -278,6 +294,7 @@ function settingText()
         set2[0].innerHTML = classes[currentId]["set2"];
         set3[0].innerHTML = classes[currentId]["set3"];
         misc3[0].innerHTML = classes[currentId]["misc3"];
+        frqT1Infox2[0].innerHTML = classes[currentId]["frqT1Infox2"];
     }
 
 
@@ -340,17 +357,3 @@ toggle.addEventListener('click', function()
 {
     sidebar.classList.toggle('hidden');
 });
-
-let w = window.innerWidth;
-let h = window.innerHeight; 
-
-function chartResize()
-{
-    let w = window.innerWidth;
-    let h = window.innerHeight; 
-    if(w< 400)
-    {
-        document.getElementById("myChart").width = 740;
-        document.getElementById("myChart").height = 370;
-    }
-}
