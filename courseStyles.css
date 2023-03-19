@@ -68,7 +68,7 @@ button:hover{
     padding-right: 25px;
     padding-top: 25px;
 }
-.language{
+.language, .science{
     background-color: var(--blue);
     width: 100%;
     height: 45%;
@@ -77,6 +77,9 @@ button:hover{
     align-items: center;
     font-size: 62px;
     font-weight: 800;
+}
+.science{
+    background-color: var(--purple);
 }
 .courses{
     display: flex;
@@ -95,6 +98,9 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+.sciBox{
+    background: var(--purple);
+}
 .border{
     width: 98.5%;
     height: 98.5%;
@@ -102,12 +108,8 @@ button:hover{
     background: #6D8AFF;
     opacity: 100%;
 }
-#lightMode{
-    width: 98.5%;
-    height: 98.5%;
-    border-radius: 10px;
-    background: #546fdb;
-    opacity: 100%; 
+.sciBorder{
+    background: #9486F1;
 }
 .info{
     padding: 7%;
@@ -118,7 +120,7 @@ button:hover{
 .courses{
     margin-top: 5%;
     display: grid;
-    grid-template: 350px/ 450px 450px 400px;
+    grid-template: 350px 350px/ 450px 450px 400px;
 }
 a:hover{
     cursor: pointer;
