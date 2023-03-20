@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --white: #f7f7f7;
+    --green: #558b6e;
+    --black: #3f3f3f;
+    --blue: #2b4dd4;
+    --orange: #f17354;
+    --gray: #4c5b5c;
+    --purple: #6d5af1;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    background: var(--white);
+    display: flex;
+    overflow-x: hidden;
+    margin: 0;
+    margin-top: 1%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.green{
+    color: var(--green);
+}
+.header{
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 2%;
+    width: 100%;
+    height: 6%;
+}
+.stay{
+    position: fixed;
+}
+.AAAP{
+    color: var(--black);
+}
+.AAAP:visited{
+    color: var(--black);
+}
+.mainContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.mainInfo{
+    width: 55%;
+    border-left: 2px solid rgb(76, 91, 92, .2);
+    border-right: 2px solid rgb(76, 91, 92, .2);
+}
+.articleHeader{
+    font-size: 30px;
+    margin-left: 3%;
+    font-weight: 900;
+    text-shadow: 1px 0 var(--gray);
+    color: var(--gray);
+}
+h2{
+    font-size: 20px;
+    margin-left: 3%;
+    font-weight: 600;
+    color: #212828;
+}
+p{
+    color: #212828;
+    margin-left: 6%;
+    font-size: 17;
+}
+.hyperlinkedArea{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.hyperlinks{
+    color: #8BA6A8;
+    margin: 4%;
+    margin-left: 20%;
+    width: 100%;
+}
+a, a:visited{
+    color: #8BA6A8;
+    text-decoration: none;
+}
+.hyperlinks:first-child{
+    margin-top: 30%;
+}
+.indent{
+    text-indent: 2%;
+}
+.doubleIndent{
+    text-indent: 4%;
+}
+.chartBox{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myDonught{
+    width: 250px;
+    height: 15;
+}
+
+.chartCard, .myDonught{
+    width: 90%;
+}
+
+@media(max-width: 1000px)
+{
+    .mainInfo{
+        padding-right: 1%;
+        width: 75%;
+
+    }
+    .hyperlinks
+    {
+        visibility: hidden;
+        position: absolute;
+    }
+    .chartBox
+    {
+        height: 15%;
+    }
+    .donught{
+        height: 17%;
+    }
+    .stay{
+        position: sticky;
+    }
+}
+
+@media(max-width: 800px)
+{
+    .chartBox
+    {
+        height: 10%;
+    }
+    .donught{
+        height: 12%;
+    }
+}
+@media(max-width: 480px)
+{
+    .mainInfo{
+        border: none;
+        width: 90%;
+    }
+    .chartBox
+    {
+        height: 5%;
+    }
+    .donught{
+        height: 5%;
+    }
+    .maininfo{
+        width: 100%;
+        padding: 0%;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+    
+}

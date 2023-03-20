@@ -1,4 +1,3 @@
-<!doctype html>
     // setup
     const data = {
       labels: ['5', '4', '3', '2', '1'],

@@ -68,7 +68,7 @@ button:hover{
     padding-right: 25px;
     padding-top: 25px;
 }
-.language{
+.language, .science, .math, .ss{
     background-color: var(--blue);
     width: 100%;
     height: 45%;
@@ -77,6 +77,18 @@ button:hover{
     align-items: center;
     font-size: 62px;
     font-weight: 800;
+}
+.science{
+    background-color: var(--purple);
+}
+.math{
+    background-color: var(--gray);
+}
+.math{
+    background-color: var(--gray);
+}
+.ss{
+    background-color: var(--orange);
 }
 .courses{
     display: flex;
@@ -95,6 +107,15 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+.sciBox{
+    background: var(--purple);
+}
+.mathBox{
+    background: var(--gray);
+}
+.ssBox{
+    background: var(--orange);
+}
 .border{
     width: 98.5%;
     height: 98.5%;
@@ -102,12 +123,14 @@ button:hover{
     background: #6D8AFF;
     opacity: 100%;
 }
-#lightMode{
-    width: 98.5%;
-    height: 98.5%;
-    border-radius: 10px;
-    background: #546fdb;
-    opacity: 100%; 
+.sciBorder{
+    background: #9486F1;
+}
+.mathBorder{
+    background: #748B8C;
+}
+.ssBorder{
+    background: #F18C74;
 }
 .info{
     padding: 7%;
@@ -118,7 +141,7 @@ button:hover{
 .courses{
     margin-top: 5%;
     display: grid;
-    grid-template: 350px/ 450px 450px 400px;
+    grid-template: 350px 350px/ 450px 450px 400px;
 }
 a:hover{
     cursor: pointer;
@@ -131,6 +154,7 @@ a:visited{
 }
 a{
     text-decoration: none;
+    color: var(--white);
 }
 
 @media(min-width: 1000px)
@@ -193,5 +217,8 @@ a{
         font-size: 1.3rem;
         gap: 0rem;
         font-weight: 1000;
+    }
+    .ss{
+        font-size: 46px;
     }
 }
