@@ -26,7 +26,7 @@ body{
     top: 0;
     width: 100%;
     height: 10%;
-    background-color: #394471;
+    background-color: #355745;
     overflow-y: auto;
     transition: all .5s ease-out;
     display: flex;
@@ -205,8 +205,15 @@ a{
 }
 @media(max-width: 480px)
 {
+
     .courses{
         grid-template: 350px 350px 350px 350px/ 350px;
+    }    
+    .ssCourses{
+        grid-template: 350px 350px 350px 350px 350px 350px 350px/ 350px;
+    }
+    .sciCourses{
+        grid-template: 350px 350px 350px 350px 350px 350px/ 350px;
     }
     .box{
         width: 100%;

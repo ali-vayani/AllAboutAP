@@ -21,6 +21,7 @@ body{
 }
 .greenA{
     color:var(--green);
+    text-shadow: 1px 0 var(--green);
 }
 button{
     border-style: none;
@@ -160,6 +161,40 @@ a:visited{
 .science:hover{
     box-shadow: 0px 0px 15px #7d5eff;
 }
+
+.chatAP{
+    position: fixed;
+    background-color: var(--green);
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+    bottom: 75px;
+    right: 75px;
+    box-shadow: 0px 0px 3px var(--green);
+}
+.chatAPBtn{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    background: none;
+    color: var(--white);
+}
+@keyframes btnHover {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px var(--green);
+    }
+}
+.chatAP:hover{
+    animation: .35s btnHover 1 forwards;
+    cursor: pointer;
+}
+.chatAPBtn:hover{
+    cursor: pointer;
+}
 footer{
     width: 100%;
     height: 5%;
@@ -168,6 +203,7 @@ footer{
     color: var(--black);
     font-weight: 1000;
 }
+
 @media(max-width: 840px)
 {
     h1{
@@ -187,6 +223,15 @@ footer{
     img{
         width: 300px;
         height: 300px;
+    }
+    .chatAP{
+        width: 60px;
+        height: 60px;
+        right: 30px;
+        bottom: 45px;
+    }
+    .chatAPBtn{
+        font-size: 35px;
     }
 }
 @media(max-width: 640px)
@@ -253,5 +298,9 @@ footer{
     .mode{
         padding-top: 15px;
         padding-right: 15px;
+    }
+    .chatAP{
+        right: 20px;
+        bottom: 45px;
     }
 }

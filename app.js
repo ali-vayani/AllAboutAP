@@ -43,7 +43,7 @@ let sciClasses =
     },
     {
         "name":"AP Environmental Science",
-        "courseInfo":"AP Environmental Science is a course based on identifying and analyzing environmental problems, including learning about earth systems and resources. You’ll cultivate a strong understanding of the living world, as well as the many environmental aspects, consequences, and effects that humans have caused. Expect a low amount of coursework and studying, as this is a relatively easy AP exam, despite the rate of receiving a 5 being unusually low. "
+        "courseInfo":"AP Environmental Science is a course based on identifying and analyzing environmental problems, including learning about earth systems and resources. You’ll cultivate a strong understanding of the living world, as well as the many environmental aspects, consequences, and effects that humans have caused. "
     },
     {
         "name":"AP Physics 1: Algebra-Based",
@@ -328,9 +328,11 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1) => observer.observe(e1));
 
 //Sidebar stuff -- currently broken
-var sidebar = document.getElementById('sideBar');
-var toggle = document.getElementById('toggle');
-toggle.addEventListener('click', function()
+function sideBarStuff()
 {
+    console.log("test")
+    var sidebar = document.getElementById('sideBar');
     sidebar.classList.toggle('hidden');
-});
+
+}
+
