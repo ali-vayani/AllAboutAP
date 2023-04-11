@@ -157,4 +157,11 @@ input{
         padding-top: 4%;
         justify-content: flex-start;
     }
+    .textBubble{
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+    .userArea, .aiArea{
+        padding-block: 1%;
+    }
 }
