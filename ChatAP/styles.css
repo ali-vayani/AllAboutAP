@@ -146,6 +146,7 @@ header{
 {
     #enter{
         width: 10%;
+        padding-right: 1rem;
     }
     .textBox{
         min-height: 65vh;
