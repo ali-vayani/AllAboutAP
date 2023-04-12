@@ -147,9 +147,6 @@ header{
     #enter{
         width: 10%;
     }
-    .textBox{
-        height: 65vh;
-    }
     .main{
         display: flex;
         padding-top: 4%;
