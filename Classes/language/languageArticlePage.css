@@ -34,9 +34,11 @@ body{
 }
 .stay{
     position: fixed;
+    text-decoration: none;
 }
 .AAAP{
     color: var(--black);
+    text-decoration: none;
 }
 .AAAP:visited{
     color: var(--black);
@@ -82,10 +84,10 @@ p{
     margin: 4%;
     margin-left: 20%;
     width: 100%;
+    text-decoration: none;
 }
 a, a:visited{
     color: #5CB0F5;
-    text-decoration: none;
 }
 .hyperlinks:first-child{
     margin-top: 30%;

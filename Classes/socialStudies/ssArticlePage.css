@@ -38,6 +38,7 @@ body{
 }
 .AAAP{
     color: var(--black);
+    text-decoration: none;
 }
 .AAAP:visited{
     color: var(--black);
@@ -83,10 +84,12 @@ p{
     margin: 4%;
     margin-left: 20%;
     width: 100%;
+    text-decoration: underline;
 }
 a, a:visited{
     color: #FF9059;
     text-decoration: none;
+    text-decoration: underline;
 }
 .hyperlinks:first-child{
     margin-top: 30%;
