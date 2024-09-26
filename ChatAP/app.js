@@ -96,15 +96,15 @@ async function getAIResponse(prompt)
 
 	try {
 		//Ai Response stored here
-		const response = await fetch("https://chatap-3obp.onrender.com/", {
-		method: "POST",
-		body: JSON.stringify({
-			message: prompt
-		}),
-		headers: {
-			"Content-type": "application/json; charset=UTF-8"
-		}
-		}).then((response) => response.json());
+		// const response = await fetch("https://chatap-3obp.onrender.com/", {
+		// method: "POST",
+		// body: JSON.stringify({
+		// 	message: prompt
+		// }),
+		// headers: {
+		// 	"Content-type": "application/json; charset=UTF-8"
+		// }
+		// }).then((response) => response.json());
 
 		//Getting the AI response in the right format
 		const botResponse = response.bot.trim();
